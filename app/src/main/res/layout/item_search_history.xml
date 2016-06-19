@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/contentTextView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="51dp"
+    android:background="@drawable/list_item_selector"
+    android:gravity="center_vertical"
+    android:paddingLeft="10dp"
+    android:textColor="#ff403b37"
+    android:textSize="12sp"
+    tools:text="小跳蚤搜索"/>

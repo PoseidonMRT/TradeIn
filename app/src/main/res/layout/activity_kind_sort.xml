@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context="com.tt.tradein.ui.activity.KindSortActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/topBarBgColor"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:text="@string/kind_sort"/>
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/topBarBgColor">
+        <LinearLayout
+            android:id="@+id/setting_back_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:text="@string/str_back"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"
+            android:textSize="14sp"
+            android:text="@string/str_setting"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+                <com.tt.tradein.widget.SettingsItemLayout
+                    android:id="@+id/set_has_shield"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftText="@string/str_ignore_person"
+                    app:leftTextColor="@color/textColorSelected" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <com.tt.tradein.widget.SettingsItemLayout
+                    android:id="@+id/set_pic_quailty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftText="@string/str_picture_size"
+                    app:leftTextColor="@color/textColorSelected" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorBg" />
+
+                <com.tt.tradein.widget.SettingsItemLayout
+                    android:id="@+id/set_play_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftText="@string/str_video_size"
+                    app:leftTextColor="@color/textColorSelected" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorBg" />
+
+                <com.tt.tradein.widget.SettingsItemLayout
+                    android:id="@+id/set_notification"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftText="@string/str_message_mind"
+                    app:leftTextColor="@color/textColorSelected" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorWhite"
+                android:orientation="vertical">
+
+                <com.tt.tradein.widget.SettingsItemLayout
+                    android:id="@+id/set_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftText="@string/str_about_tradein"
+                    app:leftTextColor="@color/textColorSelected" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorBg" />
+
+                <com.tt.tradein.widget.SettingsItemLayout
+                    android:id="@+id/set_help_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftText="@string/str_help"
+                    app:leftTextColor="@color/textColorSelected" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorBg" />
+
+                <com.tt.tradein.widget.SettingsItemLayout
+                    android:id="@+id/set_share"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftText="@string/str_introduce_to_friend"
+                    app:leftTextColor="@color/textColorSelected" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorBg" />
+
+                <com.tt.tradein.widget.SettingsItemLayout
+                    android:id="@+id/set_convention"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:leftText="@string/str_tradein_rule"
+                    app:leftTextColor="@color/textColorSelected" />
+
+            </LinearLayout>
+
+            <com.tt.tradein.widget.SettingsItemLayout
+                android:id="@+id/clear_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:leftText="@string/str_clear_cache"
+                app:leftTextColor="@color/textColorSelected"
+                app:rightIcon="@mipmap/clear_cache" />
+
+            <Button
+                android:id="@+id/sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_btn_quit_login"
+                android:text="@string/sign_out"
+                android:textColor="@color/topBarBgColor"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

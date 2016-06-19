@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.tt.tradein.ui.activity.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/topBarBgColor">
+
+        <LinearLayout
+            android:id="@+id/activity_register_back_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@mipmap/back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="返回"
+                android:textColor="@color/colorWhite" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/activity_register_name"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:id="@+id/activity_register_input_phone_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_my_order_for_goods_activity_top_item_margin_left"
+            android:gravity="center"
+            android:paddingLeft="@dimen/activity_my_order_for_goods_activity_top_item_padding"
+            android:paddingRight="@dimen/activity_my_order_for_goods_activity_top_item_padding"
+            android:text="@string/activity_register_please_input_your_phone_number"
+            android:textColor="@drawable/activity_my_order_for_goods_textview_color_selector" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/activity_home_fragment_imageview_margin"
+            android:layout_toRightOf="@id/activity_register_input_phone_number_textview"
+            android:src="@mipmap/person_center_see_all" />
+
+        <TextView
+            android:id="@+id/activity_register_input_check_number_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/activity_my_order_for_goods_activity_top_item_padding"
+            android:paddingRight="@dimen/activity_my_order_for_goods_activity_top_item_padding"
+            android:text="@string/activity_register_input_sms_check_number"
+            android:textColor="@drawable/activity_my_order_for_goods_textview_color_selector" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/activity_home_fragment_imageview_margin"
+            android:layout_toRightOf="@id/activity_register_input_check_number_textview"
+            android:src="@mipmap/person_center_see_all" />
+
+        <TextView
+            android:id="@+id/activity_register_input_password_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_my_order_for_goods_activity_top_item_margin_left"
+            android:gravity="center"
+            android:paddingLeft="@dimen/activity_my_order_for_goods_activity_top_item_padding"
+            android:paddingRight="@dimen/activity_my_order_for_goods_activity_top_item_padding"
+            android:text="@string/activity_register_set_your_password"
+            android:textColor="@drawable/activity_my_order_for_goods_textview_color_selector" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_register_input_username_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_register_edittext_layout_margin"
+        android:layout_marginRight="@dimen/activity_register_edittext_layout_margin"
+        android:layout_marginTop="@dimen/activity_login_layout_margin"
+        android:background="@color/colorWhite"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/activity_register_user_input_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_register_edittext_height"
+            android:background="@null"
+            android:hint="@string/str_please_input_username"
+            android:maxLength="20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_register_edittext_layout_margin"
+        android:layout_marginRight="@dimen/activity_register_edittext_layout_margin"
+        android:layout_marginTop="@dimen/activity_login_layout_margin"
+        android:background="@color/colorWhite">
+
+        <EditText
+            android:id="@+id/activity_register_input_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_register_edittext_height"
+            android:background="@null"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_"
+            android:hint="@string/activity_register_please_input_your_phone_number"
+            android:maxLength="20" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_register_confirm_input_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_register_edittext_layout_margin"
+        android:layout_marginRight="@dimen/activity_register_edittext_layout_margin"
+        android:layout_marginTop="@dimen/activity_login_layout_margin"
+        android:background="@color/colorWhite"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/activity_register_confirm_input_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_register_edittext_height"
+            android:background="@null"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_"
+            android:hint="@string/activity_register_please_input_your_phone_number"
+            android:maxLength="20" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_register_sure_textview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_login_btn_height"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/activity_login_btn_margin"
+        android:layout_marginRight="@dimen/activity_login_btn_margin"
+        android:layout_marginTop="@dimen/activity_login_btn_margin_top"
+        android:background="@color/topBarBgColor"
+        android:gravity="center"
+        android:text="@string/activity_login"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_login_item_height">20dp</dimen>
+    <dimen name="activity_login_layout_margin">10dp</dimen>
+    <dimen name="activity_login_layout_margin_top">35dp</dimen>
+    <dimen name="activity_login_pass_layout_margin_top">5dp</dimen>
+    <dimen name="activity_login_btn_margin_top">30dp</dimen>
+    <dimen name="activity_login_btn_margin">25dp</dimen>
+    <dimen name="activity_login_top_height">150dp</dimen>
+    <dimen name="activity_login_back_imgeview_margin">10dp</dimen>
+    <dimen name="activity_photo_margin">75dp</dimen>
+    <dimen name="activity_login_btn_height">45dp</dimen>
+    <dimen name="activity_login_forget_password_height">20dp</dimen>
+    <dimen name="activity_register_imageview_margin">10dp</dimen>
+    <dimen name="activity_register_edittext_layout_margin">25dp</dimen>
+    <dimen name="activity_register_edittext_height">40dp</dimen>
+    <dimen name="activity_my_order_for_goods_top_height">35dp</dimen>
+    <dimen name="activity_my_order_for_goods_activity_top_item_height">40dp</dimen>
+    <dimen name="activity_my_order_for_goods_activity_item_height">100dp</dimen>
+    <dimen name="activity_my_order_for_goods_activity_top_item_margin">10dp</dimen>
+    <dimen name="activity_my_order_for_goods_activity_top_item_padding">4dp</dimen>
+    <dimen name="activity_my_order_for_goods_activity_top_item_margin_left">30dp</dimen>
+    <dimen name="activity_home_fragment_imageview_margin">5dp</dimen>
+    <dimen name="ui_10_dip">10dip</dimen>
+</resources>

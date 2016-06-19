@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TopBarView">
+        <attr name="topTitle" format="string"/>
+        <attr name="topMidTitle" format="string"/>
+        <attr name="topSubtitle" format="string"/>
+        <attr name="topIcon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SettingsItemLayout">
+        <attr name="leftText" format="reference"/>
+        <attr name="leftTextSize" format="dimension"/>
+        <attr name="leftTextColor" format="color"/>
+        <attr name="rightIcon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/home_top_bar"
+        android:background="@color/topBarBgColor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/activity_search_result_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/back"/>
+        <TextView
+            android:id="@+id/activity_search_result_top"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorTitle"
+            android:text="@string/str_all_kind"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.tt.tradein.widget.CustomExpandableListView
+            android:id="@+id/activity_search_result_goods_list"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:childIndicator="@null"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:groupIndicator="@null"
+            android:divider="@null"
+            android:childDivider="#00000000"
+            android:dividerHeight="0dp"
+            />
+    </ScrollView>
+</LinearLayout>

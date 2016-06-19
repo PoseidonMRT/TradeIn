@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:background="@drawable/plugin_camera_no_pictures"
+        android:scaleType="centerCrop" 
+        android:layout_gravity="center"/>
+    <RelativeLayout 
+     	android:layout_width="fill_parent"
+     	android:layout_height="fill_parent"
+     	android:id="@+id/toggle"
+     >
+  
+    <ToggleButton
+        android:id="@+id/toggle_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/plugin_camera_pic_choose_selector"
+        android:textOff="@null"
+        android:textOn="@null" />
+     <Button
+        android:id="@+id/choosedbt"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/plugin_camera_choosed"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone" 
+        />
+	</RelativeLayout>
+</RelativeLayout>

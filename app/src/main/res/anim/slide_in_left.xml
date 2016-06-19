@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- translate：画面转换位置移动动画效果 -->
+    <translate
+        android:duration="500"
+        android:fromXDelta="100%p"
+        android:toXDelta="0" />
+    <!-- alpha：渐变透明度动画效果 -->
+    <alpha
+        android:duration="500"
+        android:fromAlpha="0.1"
+        android:toAlpha="1.0" />
+    <!-- scale：渐变尺寸伸缩动画效果 -->
+    <!-- rotate：画面转换位置移动动画效果 -->
+</set>
